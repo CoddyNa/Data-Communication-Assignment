@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Communication Assignment</title>
+  <meta name="description" content="A cinematic futuristic interactive data communication assignment showcase." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;700;800;900&family=Poppins:wght@500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="loader" aria-label="Loading Data Communication Assignment">
+    <div class="loader__ring"></div>
+    <p>Initializing orbital network</p>
+  </div>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="space-canvas" aria-hidden="true"></canvas>
+  <div class="page-light" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" aria-label="Data Communication Assignment home">
+      <span class="brand__mark"></span>
+      <span>DataComms</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+      <span class="theme-toggle__icon" aria-hidden="true"></span>
+      <span class="theme-toggle__text">Dark</span>
+    </button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#topics">Topics</a>
+      <a href="#inspiration">Inspiration</a>
+      <a href="#lecturer">Lecturer</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero__content" data-speed="0.7">
+        <p class="eyebrow">Speed Layer / Protocol Orbit / 2026</p>
+        <h1>Exploring the World of Data Communication</h1>
+        <p class="hero__subtitle">Telegraph &bull; Morse Code &bull; Networking &bull; OSI Model &bull; Cybersecurity &bull; Satellites</p>
+        <p class="typing-line" aria-live="polite"><span id="typing-text"></span><span class="type-caret"></span></p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#topics">Launch Topics</a>
+          <a class="btn btn--ghost" href="#about">Meet Student</a>
+        </div>
+      </div>
+      <div class="hero__hud glass-panel" data-speed="1.1">
+        <span>LIVE NETWORK</span>
+        <strong>99.94%</strong>
+        <small>Signal integrity across orbital relay paths</small>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span>
+        <p>Scroll to accelerate</p>
+      </div>
+    </section>
+
+    <section class="about section-shell white-band" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Section 01</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="profile-grid">
+        <article class="profile-card glass-panel reveal tilt-card">
+          <figure class="profile-image">
+            <img src="assets/images/student.jpg" alt="Student portrait" />
+          </figure>
+          <div>
+            <p class="eyebrow">Student Pilot</p>
+            <h3>Ezekiel Narh</h3>
+            <p class="muted">Student ID: PUIT24110052</p>
+            <p>I am a technology-focused student exploring how signals, protocols, networks, and secure systems connect people across the world. My goal is to build software and infrastructure that feels fast, reliable, secure, and useful.</p>
+          </div>
+          <div class="social-row" aria-label="Social media placeholders">
+            <a href="https://www.linkedin.com/in/ezekiel-narh-4a03b9366" target="_blank" rel="noreferrer">IN</a>
+            <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+            <a href="mailto:student@example.com">EM</a>
+          </div>
+        </article>
+        <div class="stats-grid">
+          <article class="stat-card reveal"><strong data-count="13">0</strong><span>Topics mapped</span></article>
+          <article class="stat-card reveal"><strong data-count="7">0</strong><span>OSI layers</span></article>
+          <article class="stat-card reveal"><strong data-count="3">0</strong><span>CIA pillars</span></article>
+          <article class="stat-card reveal"><strong data-count="100">0</strong><span>Momentum</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="topics section-shell" id="topics">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Section 02</p>
+        <h2>Topics Studied</h2>
+      </div>
+      <article class="data-essay glass-panel reveal">
+        <h3>Short Essay: Data Communication</h3>
+        <p>Data communication is the process of sending, receiving, and interpreting information between devices through a transmission medium. It connects computers, phones, routers, access points, satellites, and servers so that text, images, videos, voice, and files can move from one place to another. A complete data communication system depends on a sender, receiver, message, medium, and protocol. The sender prepares the data, the medium carries it, the receiver accepts it, and protocols define the rules that make the exchange understandable and reliable.</p>
+        <p>In this course, data communication was studied as both a historical and modern technology. The telegraph and Morse code showed how simple electrical pulses could represent messages. Modern networking expands that idea through digital signals, IP addressing, routers, wireless access points, encryption, and layered models such as OSI. Understanding these topics is important because almost every modern service depends on fast, secure, and accurate communication between systems.</p>
+      </article>
+      <div class="topic-grid" aria-label="Data communication topics">
+        <article class="topic-card tilt-card reveal"><span>01</span><h3>Telegraph</h3><p>Electrical messaging that compressed distance into coded pulses.</p></article>
+        <article class="topic-card tilt-card reveal"><span>02</span><h3>Morse Code</h3><p>Dots, dashes, rhythm, and timing as an early digital language.</p></article>
+        <article class="topic-card tilt-card reveal"><span>03</span><h3>Data Signals</h3><p>Analog and digital waveforms moving information through media.</p></article>
+        <article class="topic-card tilt-card reveal"><span>04</span><h3>OSI Model</h3><p>Seven layers that organize networking from physical bits to apps.</p></article>
+        <article class="topic-card tilt-card reveal"><span>05</span><h3>PGP</h3><p>Public-key encryption for secure messages and trust.</p></article>
+        <article class="topic-card tilt-card reveal"><span>06</span><h3>Cisco Packet Tracer</h3><p>Simulation workflows for DHCP router configuration and testing.</p></article>
+        <article class="topic-card tilt-card reveal"><span>07</span><h3>CIA Triad</h3><p>Confidentiality, integrity, and availability as security anchors.</p></article>
+        <article class="topic-card tilt-card reveal"><span>08</span><h3>Satellites</h3><p>Orbital relays extending communication beyond terrestrial limits.</p></article>
+        <article class="topic-card tilt-card reveal"><span>09</span><h3>Networking</h3><p>Devices, protocols, and paths that make systems communicate.</p></article>
+        <article class="topic-card tilt-card reveal"><span>10</span><h3>Access Point</h3><p>Wireless gateways connecting mobile devices to a network.</p></article>
+        <article class="topic-card tilt-card reveal"><span>11</span><h3>Power over Ethernet</h3><p>Network cables delivering both data and electrical power.</p></article>
+        <article class="topic-card tilt-card reveal"><span>12</span><h3>Data Communication</h3><p>The full stack of encoding, transmission, routing, and security.</p></article>
+        <article class="topic-card tilt-card reveal"><span>13</span><h3>Kleopatra Encryption</h3><p>A practical interface for certificate and OpenPGP workflows.</p></article>
+      </div>
+    </section>
+
+    <section class="telegraph section-shell white-band" id="telegraph">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Section 03</p>
+        <h2>Telegraph Diagram</h2>
+      </div>
+      <div class="telegraph-stage glass-panel reveal">
+        <svg class="telegraph-svg" viewBox="0 0 1100 360" role="img" aria-label="Animated telegraph system diagram">
+          <defs>
+            <linearGradient id="wireGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="48%" stop-color="#00a6ff" />
+              <stop offset="100%" stop-color="#ffffff" />
+            </linearGradient>
+            <filter id="blueBlur">
+              <feGaussianBlur stdDeviation="5" result="blur" />
+              <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          </defs>
+          <g class="diagram-node">
+            <circle cx="125" cy="178" r="64"></circle>
+            <text x="125" y="168">Sender</text>
+            <text x="125" y="197" class="morse">.-..</text>
+          </g>
+          <g class="diagram-node">
+            <rect x="265" y="120" width="150" height="116" rx="24"></rect>
+            <text x="340" y="169">Telegraph</text>
+            <text x="340" y="198">Key</text>
+            <path class="key-arm" d="M300 220 L384 144" />
+          </g>
+          <path class="wire" d="M420 178 C540 88 638 270 760 178 S940 110 1000 178" />
+          <circle class="pulse pulse-a" r="8"></circle>
+          <circle class="pulse pulse-b" r="8"></circle>
+          <circle class="pulse pulse-c" r="5"></circle>
+          <g class="diagram-node">
+            <rect x="820" y="120" width="150" height="116" rx="24"></rect>
+            <text x="895" y="169">Receiver</text>
+            <text x="895" y="198" class="morse">... --- ...</text>
+          </g>
+          <text x="550" y="315" class="signal-caption">Electrical pulses travel as Morse code signals through the wire</text>
+        </svg>
+      </div>
+      <div class="telegraph-gallery">
+        <figure class="telegraph-photo reveal">
+          <img src="assets/images/telegraph-machine.jpg" alt="Sketch of a telegraph key machine" />
+          <figcaption>A telegraph key is a switch used by an operator to open and close an electric circuit. When pressed, it sends a current pulse; when released, the circuit opens and the pulse stops.</figcaption>
+        </figure>
+        <figure class="telegraph-photo reveal">
+          <img src="assets/images/telegraph-system.jpg" alt="Telegraph transmitter and receiver diagram" />
+          <figcaption>The transmitter, battery, wire, coil, and receiver work together. The operator taps short and long pulses as Morse code, the current travels through the wire, and the receiver marks or sounds the message for decoding.</figcaption>
+        </figure>
+      </div>
+      <article class="telegraph-description reveal">
+        <h3>How the Telegraph Operates</h3>
+        <p>A telegraph machine converts human input into electrical pulses. The sender presses the transmission key to complete a circuit connected to a battery. A short press creates a dot, a longer press creates a dash, and combinations of dots and dashes form letters in Morse code. These pulses travel through a telegraph wire to the receiver, where an electromagnet responds to the current. The receiver can make clicking sounds or mark paper tape, allowing the operator to translate the pattern back into readable text.</p>
+      </article>
+    </section>
+
+    <section class="inspiration section-shell" id="inspiration">
+      <div class="inspiration-copy reveal">
+        <p class="eyebrow">Section 04</p>
+        <h2>What Inspires Me</h2>
+        <blockquote>&ldquo;The future belongs to builders who understand how information moves.&rdquo;</blockquote>
+        <p>Technology inspires me because it turns imagination into systems people can use. Networking reveals the invisible routes behind daily life, cybersecurity teaches discipline and trust, and software development gives me a way to create tools that can scale from one person to the world.</p>
+        <p>My career goal is to grow into a developer who understands both code and infrastructure, building secure products with speed, clarity, and purpose.</p>
+      </div>
+    </section>
+
+    <section class="lecturer section-shell white-band" id="lecturer">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Section 05</p>
+        <h2>Lecturer Profile</h2>
+      </div>
+      <article class="lecturer-card glass-panel reveal tilt-card">
+        <figure class="lecturer-image">
+          <img src="assets/images/lecturer.jpg" alt="Lecturer portrait" />
+        </figure>
+        <div>
+          <p class="eyebrow">Course Guide</p>
+          <h3>Dr Harry Atieku</h3>
+          <p>A professional educator guiding students through communication systems, network design, security principles, and practical digital infrastructure.</p>
+          <div class="badge-row">
+            <span>Networking</span>
+            <span>Security</span>
+            <span>Protocols</span>
+            <span>Systems</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="resources section-shell" id="resources">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Section 06</p>
+        <h2>Resources</h2>
+      </div>
+      <div class="resource-grid resource-grid--compact">
+        <article class="resource-card reveal">
+          <h3>Turnitin PDF</h3>
+          <p>Submission originality report and assignment PDF document.</p>
+          <a class="btn btn--ghost" href="assets/documents/EzekielNarh_PUIT24110052.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+        </article>
+        <article class="resource-card reveal">
+          <h3>Assignment Document</h3>
+          <p>Download or view the assignment document.</p>
+          <a class="btn btn--ghost" href="assets/documents/EzekielNarh_PUIT24110052.pdf" target="_blank" rel="noreferrer">Open Document</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="video section-shell white-band" id="video">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Section 07</p>
+        <h2>YouTube Video</h2>
+      </div>
+      <div class="video-frame reveal">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hXa3bTcIGPU?si=hGAkttyt29xrA2Lt&rel=0&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <a class="btn btn--primary video-fallback reveal" href="https://youtu.be/hXa3bTcIGPU?si=hGAkttyt29xrA2Lt" target="_blank" rel="noreferrer">Watch on YouTube</a>
+    </section>
+
+    <section class="topic-details section-shell" id="topic-details">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Section 08</p>
+        <h2>Topic Deep Dive</h2>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card reveal"><h3>Telegraph</h3><p>The telegraph was one of the earliest electrical communication systems. It used a key, battery, wire, and receiver to send coded pulses across long distances before telephones and internet networks existed.</p></article>
+        <article class="detail-card reveal"><h3>Morse Code</h3><p>Morse code represents letters and numbers using dots and dashes. It teaches how timing, patterns, and signal interpretation can turn simple pulses into meaningful communication.</p></article>
+        <article class="detail-card reveal"><h3>Data Signals</h3><p>Data signals carry information as analog or digital waveforms. We studied signal types, basic calculations, bit rate, bandwidth, and how data changes form as it moves through a channel.</p></article>
+        <article class="detail-card reveal"><h3>OSI Model</h3><p>The OSI model divides networking into seven layers: physical, data link, network, transport, session, presentation, and application. It helps explain where different devices, protocols, and errors belong.</p></article>
+        <article class="detail-card reveal"><h3>PGP</h3><p>PGP protects messages using encryption, public keys, private keys, and digital signatures. It shows how secure communication can protect confidentiality and prove authenticity.</p></article>
+        <article class="detail-card reveal"><h3>Cisco Packet Tracer</h3><p>Cisco Packet Tracer was used to simulate networks and practice DHCP router configurations. DHCP allows a router or server to automatically assign IP addresses, subnet masks, gateways, and DNS settings to connected devices.</p></article>
+        <article class="detail-card reveal"><h3>CIA Triad</h3><p>The CIA triad explains the main goals of cybersecurity: confidentiality keeps data private, integrity keeps data accurate, and availability keeps systems accessible when needed.</p></article>
+        <article class="detail-card reveal"><h3>Satellites</h3><p>Communication satellites relay signals between distant locations on Earth. They are useful for broadcasting, navigation, remote internet access, weather monitoring, and global data transfer.</p></article>
+        <article class="detail-card reveal"><h3>Networking</h3><p>Networking connects devices so they can share information and services. It includes addressing, routing, switching, wireless communication, protocols, and security controls.</p></article>
+        <article class="detail-card reveal"><h3>Access Point</h3><p>An access point allows wireless devices to connect to a wired network. It broadcasts Wi-Fi, manages wireless clients, and helps extend network coverage.</p></article>
+        <article class="detail-card reveal"><h3>Power over Ethernet</h3><p>Power over Ethernet sends both electrical power and network data through the same Ethernet cable. It is commonly used for access points, IP cameras, and VoIP phones.</p></article>
+        <article class="detail-card reveal"><h3>Data Communication</h3><p>Data communication brings together signals, transmission media, protocols, devices, and security. It explains how information is prepared, sent, received, checked, and protected.</p></article>
+        <article class="detail-card reveal"><h3>Kleopatra Encryption</h3><p>Kleopatra is a certificate and encryption tool used with OpenPGP. It helps users create keys, encrypt files, decrypt messages, and verify digital signatures.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section-shell white-band" id="contact">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Transmission Complete</h2>
+        <p>This assignment connects the past of communication with the future of networked systems, from telegraph pulses to satellite-grade data movement.</p>
+        <a class="btn btn--primary" href="mailto:student@example.com">Send Message</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
