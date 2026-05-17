@@ -864,6 +864,21 @@ blockquote {
   width: min(780px, 100%);
 }
 
+.github-section {
+  display: grid;
+  align-items: center;
+}
+
+.github-panel {
+  width: min(860px, 100%);
+  padding: clamp(1.2rem, 4vw, 2rem);
+}
+
+.github-panel p {
+  max-width: 68ch;
+  line-height: 1.7;
+}
+
 .detail-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
