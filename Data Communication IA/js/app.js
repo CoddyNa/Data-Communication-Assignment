@@ -116,7 +116,7 @@ const earth = new THREE.Mesh(
     emissiveIntensity: 0.28
   })
 );
-earth.position.set(2.65, 0.85, -1.2);
+earth.position.set(3.25, 0.85, -1.2);
 scene.add(earth);
 
 const earthGlow = new THREE.Mesh(
@@ -196,7 +196,7 @@ ScrollTrigger.create({
     satellite.position.x = -3.2 + Math.sin(p * Math.PI * 2.4) * 1.1;
     satellite.position.z = 1.7 - p * 1.1;
     earth.position.y = 0.55 + Math.sin(p * Math.PI * 2) * 0.22;
-    earth.position.x = window.innerWidth < 760 ? 2.15 : 3.35;
+    earth.position.x = window.innerWidth < 760 ? 2.4 : 3.8;
     earth.position.z = -2.35;
     earth.scale.setScalar(window.innerWidth < 760 ? 0.9 : 1.18);
     earthGlow.scale.copy(earth.scale);
@@ -207,11 +207,15 @@ ScrollTrigger.create({
 });
 
 // Hero intro uses scale, blur, and fast easing to suggest acceleration.
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".loader").classList.add("is-hidden");
+  gsap.from(".hero__content", { opacity: 0, scale: 0.88, y: 60, duration: 0.75, ease: "power4.out" });
+  gsap.from(".hero__hud", { opacity: 0, x: 90, duration: 0.65, delay: 0.2, ease: "power3.out" });
+});
 window.addEventListener("load", () => {
   document.querySelector(".loader").classList.add("is-hidden");
-  gsap.from(".hero__content", { opacity: 0, scale: 0.88, y: 60, duration: 1.1, ease: "power4.out" });
-  gsap.from(".hero__hud", { opacity: 0, x: 90, duration: 1, delay: 0.35, ease: "power3.out" });
 });
+setTimeout(() => document.querySelector(".loader").classList.add("is-hidden"), 1200);
 
 gsap.utils.toArray(".reveal").forEach((item) => {
   gsap.to(item, {
